@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arte Pal' Corillo — Talleres de Arte</title>
+  <meta name="description" content="Talleres de arte para adultos y niños. Arte con Brisa en la playa. Murales personalizados. ¡Cupos limitados!" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a class="nav-brand" href="#inicio">
+      <img src="logo.png" alt="Arte Pal' Corillo" class="nav-logo" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><button class="nav-gallery-btn" id="navGalleryBtn">📸 Galería</button></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+<div class="hero-content">
+      <img src="banner-nuevo.png" alt="Arte Pal' Corillo" class="hero-banner" />
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="section-header">
+      <h2>Nuestros Servicios</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-card-top">
+          <div class="service-icon">🎨</div>
+          <h3>Talleres para Adultos</h3>
+        </div>
+        <p class="service-short">Snack, bebida y materiales incluidos.</p>
+        <div class="service-price">$35 <small>/ persona</small></div>
+        <button class="btn-detail" data-service="adultos">Ver detalles</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-top">
+          <div class="service-icon">🖌️</div>
+          <h3>Talleres para Niños</h3>
+        </div>
+        <p class="service-short">Snacks, bebida y materiales incluidos. Edades 4–9 años.</p>
+        <div class="service-price">$25 <small>/ niño</small></div>
+        <button class="btn-detail" data-service="ninos">Ver detalles</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-top">
+          <div class="service-icon">🌊</div>
+          <h3>Arte con Brisa</h3>
+        </div>
+        <p class="service-short">Taller en la playa con snacks, bebida, materiales y música.</p>
+        <div class="service-price">$48 <small>/ persona</small></div>
+        <button class="btn-detail" data-service="brisa">Ver detalles</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-top">
+          <div class="service-icon">🏛️</div>
+          <h3>Murales</h3>
+        </div>
+        <p class="service-short">Transformamos tus espacios con arte a gran escala.</p>
+        <div class="service-price" style="font-size:1.1rem;">Bajo cotización</div>
+        <button class="btn-detail" data-service="murales">Ver detalles</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-top">
+          <div class="service-icon">🏢</div>
+          <h3>Talleres para Empresas</h3>
+        </div>
+        <p class="service-short">Talleres creativos para compañías y/o empresas. Experiencias únicas para tu equipo.</p>
+        <div class="service-price" style="font-size:1.1rem;">Bajo cotización</div>
+        <button class="btn-detail" data-service="empresas">Ver detalles</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUPOS BANNER -->
+  <div class="cupos-banner">
+    <p>⚠️ <span>¡Cupos limitados!</span> Máximo 12 personas por sesión — ¡Reserva tu lugar antes de que se llenen!</p>
+  </div>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="section-header">
+      <h2>Contáctanos</h2>
+      <p>¿Lista para crear? Escríbele a Ivelisse</p>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-wrapper">
+      <a href="https://wa.me/17873906136" target="_blank" rel="noopener" class="whatsapp-btn">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Escríbele a Ivelisse por WhatsApp
+      </a>
+
+      <div class="divider">o déjanos un mensaje</div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+          <span class="form-error" id="error-nombre">Por favor ingresa tu nombre.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@email.com" />
+          <span class="form-error" id="error-email">Por favor ingresa tu correo.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">Servicio de interés</label>
+          <select id="servicio" name="servicio">
+            <option value="">Selecciona un servicio</option>
+            <option value="Talleres para Adultos ($35)">Talleres para Adultos — $35</option>
+            <option value="Talleres para Niños ($25)">Talleres para Niños — $25</option>
+            <option value="Arte con Brisa ($48)">Arte con Brisa — $48</option>
+            <option value="Murales (cotización)">Murales — cotización</option>
+            <option value="Talleres para Empresas (cotización)">Talleres para Empresas — cotización</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="¿Tienes alguna pregunta o quieres reservar tu lugar?"></textarea>
+          <span class="form-error" id="error-mensaje">Por favor escribe un mensaje.</span>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar por WhatsApp →</button>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        ¡Mensaje enviado! 🎨 Te respondemos pronto.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/profile.php?id=61588422852232" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://wa.me/17873906136" target="_blank" rel="noopener">WhatsApp</a>
+      <span style="color:rgba(255,255,255,0.4)">@icuartworks</span>
+    </div>
+    <p>&copy; 2025 Arte Pal' Corillo. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/17873906136" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div class="modal-photo-grid" id="modalPhotos"></div>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc" style="font-size:0.95rem;color:var(--navy-light);font-weight:600;margin-bottom:0.5rem;"></p>
+      <div class="modal-price-block" id="modalPriceBlock">
+        <span class="modal-price-label" id="modalPriceLabel"></span>
+        <span class="modal-price-value" id="modalPrice"></span>
+      </div>
+      <ul id="modalList"></ul>
+      <p class="modal-note" id="modalNote"></p>
+      <a class="modal-cta" id="modalCta" href="#" target="_blank" rel="noopener">
+        <svg style="width:20px;height:20px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Reservar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX GALERÍA -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev">&#8592;</button>
+    <div class="lightbox-content">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="Galería Arte Pal' Corillo" />
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext">&#8594;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
