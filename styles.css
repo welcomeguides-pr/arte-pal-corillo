@@ -309,6 +309,43 @@ section {
   }
 }
 
+/* ── GALERÍA CTA ── */
+.gallery-cta {
+  background: var(--white);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gallery-cta p {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy-light);
+}
+
+.gallery-cta-btn {
+  background: var(--pink-mid);
+  color: var(--navy);
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 14px rgba(224, 145, 192, 0.35);
+}
+
+.gallery-cta-btn:hover {
+  background: var(--pink-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
 /* ── CUPOS BANNER ── */
 .cupos-banner {
   background: var(--navy);

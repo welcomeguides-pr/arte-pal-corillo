@@ -10,7 +10,7 @@ const services = {
     description: 'Una experiencia creativa diseñada para adultos de todos los niveles. No se necesita experiencia previa — solo ganas de divertirse y expresarte a través del arte.',
     note: '⚠️ Cupos limitados: máx. 12 personas por sesión.',
     waMessage: 'Hola Ivelisse! Me interesa el Taller para Adultos ($35). ¿Cuándo es la próxima sesión?',
-    photos: ['18.png', '19.png', '13.png'],
+    photos: [],
   },
   ninos: {
     icon: '🖌️',
@@ -21,7 +21,7 @@ const services = {
     description: 'Clases pensadas para los pequeños artistas de 4 a 9 años. Un espacio seguro, divertido y lleno de color donde los niños exploran su creatividad.',
     note: '⚠️ Edades: 4 a 9 años. Cupos limitados: máx. 12 por sesión.',
     waMessage: 'Hola Ivelisse! Me interesa el Taller para Niños ($25). ¿Cuándo es la próxima sesión?',
-    photos: ['2.png', '5.png', '11.png', '12.png'],
+    photos: [],
   },
   brisa: {
     icon: '🌊',
@@ -32,7 +32,7 @@ const services = {
     description: '¡Pinta frente al mar! Un taller único en la playa donde el ambiente natural inspira tu obra. Relájate, crea y disfruta de una experiencia artística inolvidable.',
     note: '⚠️ Cupos limitados: máx. 12 personas por sesión.',
     waMessage: 'Hola Ivelisse! Me interesa el Taller Arte con Brisa en la playa ($48). ¿Cuándo es la próxima sesión?',
-    photos: ['6.png', '7.png', '8.png', '9.png'],
+    photos: [],
   },
   empresas: {
     icon: '🏢',
@@ -43,7 +43,7 @@ const services = {
     description: 'Ofrecemos talleres creativos especialmente diseñados para compañías y empresas. Una experiencia única para fortalecer equipos y fomentar la creatividad en tu organización.',
     note: '📩 Escríbenos para recibir tu cotización personalizada.',
     waMessage: 'Hola Ivelisse! Me interesa cotizar un Taller para Empresas. ¿Me puedes dar más información?',
-    photos: ['14.png', '20.png'],
+    photos: [],
   },
   murales: {
     icon: '🏛️',
@@ -54,7 +54,7 @@ const services = {
     description: 'Transformamos tus espacios con arte a gran escala. Creamos murales personalizados para hogares, negocios y espacios públicos. Cada proyecto es único.',
     note: '📩 Contáctanos con fotos y medidas del espacio para recibir tu cotización.',
     waMessage: 'Hola Ivelisse! Me interesa cotizar un Mural. ¿Me puedes dar más información?',
-    photos: ['15.png', '16.png', '17.png', '21.png', '22.png'],
+    photos: [],
   },
 };
 
@@ -162,6 +162,7 @@ function lightboxStep(dir) {
 }
 
 document.getElementById('navGalleryBtn').addEventListener('click', () => openLightbox(0));
+document.getElementById('galleryCtaBtn').addEventListener('click', () => openLightbox(0));
 document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
 document.getElementById('lightboxPrev').addEventListener('click', () => lightboxStep(-1));
 document.getElementById('lightboxNext').addEventListener('click', () => lightboxStep(1));
