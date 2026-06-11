@@ -514,13 +514,15 @@ footer p {
   inset: 0;
   background: rgba(42, 42, 74, 0.55);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 200;
   padding: 1rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-overlay.open {
@@ -537,10 +539,18 @@ footer p {
   position: relative;
   transform: translateY(20px);
   transition: transform 0.25s;
+  margin: auto;
 }
 
 .modal-overlay.open .modal {
   transform: translateY(0);
+}
+
+@media (max-width: 599px) {
+  .modal {
+    padding: 1.5rem 1.25rem;
+    margin: 0.5rem auto;
+  }
 }
 
 .modal-photo-grid {

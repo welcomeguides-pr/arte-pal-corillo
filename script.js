@@ -111,7 +111,8 @@ function openModal(key) {
   });
 
   overlay.classList.add('open');
-  document.body.style.overflow = 'hidden';
+  overlay.scrollTop = 0;
+  if (window.innerWidth > 599) document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
