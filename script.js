@@ -135,7 +135,7 @@ document.querySelectorAll('[data-service]').forEach(btn => {
 });
 
 // Galería lightbox
-const allPhotos = Array.from({length: 22}, (_, i) => `${i + 1}.png`);
+const allPhotos = [...Array.from({length: 22}, (_, i) => `${i + 1}.png`), '23.jpeg'];
 let lightboxIndex = 0;
 
 const lightboxOverlay = document.getElementById('lightboxOverlay');
