@@ -313,7 +313,7 @@ section {
 .gallery-cta {
   background: var(--white);
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
